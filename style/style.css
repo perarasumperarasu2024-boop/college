@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "rubik", sans-serif;
+}
+body{
+  /* background-color: lightblue; */
+}
+.whole_container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../photos/logo1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+.university {
+  color: white;
+  text-align: center;
+  margin-top: 205px;
+}
+.university h1 {
+  font-size: 50px;
+}
+.university p {
+  margin-top: 15px;
+  font-size: 11px;
+}
+.university::selection{
+  color: black;
+  background-color: lightblue;
+}
+.navbar_container {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.logo_container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  gap: 20px;
+  padding: 5px;
+}
+.logo_container img {
+  border-radius: 50%;
+}
+.logo_container h2 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: white;
+}
+.navlinks {
+  display: flex;
+  gap: 30px;
+  margin-right: 40px;
+}
+.navlinks li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+.navlinks a::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  display: block;
+  margin-left: 50%;
+}
+.navlinks a:hover:after {
+  width: 100%;
+  transition: 0.5s linear all;
+  margin-left: 0%;
+}
+.container {
+  display: flex;
+  gap: 50px;
+  margin-left: 69px;
+}
+.intermediate {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  height: 190px;
+  width: 350px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.intermediate h3 {
+  text-align: center;
+  margin: 20px;
+}
+.intermediate p {
+  font-size: 13px;
+  color: gray;
+  text-align: center;
+}
+.contant-1 {
+  text-align: center;
+  padding: 50px;
+}
+.contant-1 P {
+  padding: 5px;
+  font-size: 10px;
+}
+.compas-imgs {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 36px;
+}
+.compas-imgs img {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.compas-imgs img:hover {
+  transform: scale(1.05);
+}
+.compas-imgs h2 {
+  text-align: center;
+  padding: 20px;
+}
+.compas-imgs h3 {
+  text-align: center;
+  padding: 20px;
+}
+.compas-imgs p {
+  font-size: 12px;
+  padding: 10px;
+}
+.compas {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 36px;
+  margin-top: 40px;
+}
+.compas img {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.compas img:hover {
+  transform: scale(1.05);
+}
+.compas h2 {
+  text-align: center;
+  padding: 20px;
+}
+.compas h3 {
+  text-align: center;
+  padding: 20px;
+}
+.compas p {
+  font-size: 12px;
+  padding: 10px;
+}
+.footer-container {
+  height: 200px;
+  margin-top: 60px;
+  background-color: black;
+}
+.footer-container h3 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+.footer-container p {
+  width: 750px;
+  text-align: center;
+  margin-left: 250px;
+  font-size: 13px;
+  color: gray;
+}
+.social-media {
+  margin-left: 499px;
+}
+.social-media a {
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+.social-media i {
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.5s linear;
+}
+.social-media i:hover {
+  color: white;
+  transform: scale(1.05);
+  background-color: black;
+}

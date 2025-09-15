@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="whole_container">
+      <nav class="navbar_container">
+        <div class="logo_container">
+          <img
+            src="photos/logo.jpeg"
+            alt="Logo_image"
+            width="50px"
+            height="50px"
+          />
+          <h2>VIP</h2>
+        </div>
+        <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Course</a></li>
+          <li><a href="dept.html">Departments</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="university">
+        <h1>Contact</h1>
+      </div>
+    </div>
+    <div id="successfully">
+      <h1>Successfully</h1>
+    </div>
+    <div class="head">
+      <h1>Your Details</h1>
+    </div>
+    <div class="login-box">
+      <div class="input-box">
+        <input
+          type="text"
+          id="ip1"
+          class="input-field"
+          placeholder="Enter Your Name"
+        />
+      </div>
+      <div class="input-box">
+        <input
+          type="email"
+          id="ip2"
+          class="input-field"
+          placeholder="Enter Your Email"
+        />
+      </div>
+      <div class="input-box">
+        <select name=""  id="subject" size="1">
+          <option value="">AL & ML</option>
+          <option value="">Cloud Computing</option>
+          <option value="">Data Analysic</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <button id="btn">Submit</button>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="icons">
+        <div class="location">
+          <a href="#"
+            ><i class="fa-solid fa-location-dot"></i>
+            <h3>xyz Road, abc Building</h3>
+            <p>Bangalore, Karnataka, IN</p></a
+          ><br />
+        </div>
+        <div class="phone">
+          <a href="#"
+            ><i class="fa-solid fa-phone"></i>
+            <h3>+91 0123456789</h3>
+            <p>Monaday to Saturday 10am to 6pm</p></a
+          ><br />
+        </div>
+        <div class="email">
+          <a href="#"
+            ><i class="fa-solid fa-envelope"></i>
+            <h3>vip175@gmail.com</h3>
+            <p>Email us your query</p></a
+          >
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sed
+          quis. Pariatur soluta deserunt numquam iste, aliquam placeat in cumque
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const succ = document.getElementById("successfully");
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        succ.style.display = "block";
+        setInterval(sec, 3000);
+      });
+
+      function sec() {
+        succ.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
